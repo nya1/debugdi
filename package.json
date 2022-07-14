@@ -1,0 +1,44 @@
+{
+  "name": "debugdi",
+  "version": "0.1.0",
+  "description": "debug log package with auto prefixer, built for dependency injection frameworks",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": ["build"],
+  "repository": "git@github.com:nya1/debugdi.git",
+  "author": "nya1",
+  "license": "MIT",
+  "keywords": ["debug", "log", "inversify", "ioc", "depedency injection", "inversion of control", "log prefix"],
+  "scripts": {
+    "build": "rm -rf build && tsc --p tsconfig.module.json",
+    "playground": "DEBUG=* ts-node test/playground.ts",
+    "test": "ts-mocha 'test/**/*.spec.ts'",
+    "test:coverage": "nyc yarn test",
+    "coverage:report": "nyc report --reporter html"
+  },
+  "dependencies": {
+    "debug": "^4.3.4"
+  },
+  "peerDependencies": {
+    "inversify": "^6.0.1"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/chai": "^4.3.1",
+    "@types/debug": "^4.1.7",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.0.4",
+    "@types/sinon": "^10.0.12",
+    "@types/sinon-chai": "^3.2.8",
+    "chai": "^4.3.6",
+    "inversify": "^6.0.1",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "reflect-metadata": "^0.1.13",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
