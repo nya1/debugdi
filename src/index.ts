@@ -1,7 +1,8 @@
 import { Container, decorate, injectable, interfaces } from "inversify";
-import { DebugLog } from "./debug";
 import { resolve } from "path";
 import { readFileSync } from "fs";
+export { DebugLog } from "./debug";
+import { DebugLog } from './debug';
 
 export function SetupDebugLog(
   container: Container,

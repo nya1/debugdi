@@ -1,6 +1,6 @@
 {
   "name": "debugdi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "debug log package with auto prefixer, built for dependency injection frameworks",
   "main": "build/index.js",
   "types": "build/index.d.ts",
